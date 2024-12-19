@@ -14,13 +14,33 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
+    - name: Debug MSBuild Path
+      run: |
+        if (Test-Path "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\MSBuild.exe") {
+          Write-Host "MSBuild exists at the specified path."
+        } else {
+          Write-Error "MSBuild not found at the specified path."
+        }
+      shell: pwsh
+
+    - name: Add MSBuild to PATH
+      run: echo "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin" >> $env:GITHUB_PATH
+
     - name: Restore NuGet packages
       run: nuget restore observatory.sln
 
     - name: Build project using MSBuild
       run: |
         & "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\MSBuild.exe" "observatory.sln" /p:Configuration=Release
+      shell: pwsh
 
     - name: Run Tests
       run: |
-        dotnet test observatory.sln --configuration Release --no-build --logger:trx
+        dotnet test "observatory.sln" --configuration Release --no-build --logger:trx
+      shell: pwsh
+
+    - name: Upload Test Results
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results
+        path: '**/*.trx'
