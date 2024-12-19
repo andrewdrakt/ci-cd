@@ -19,7 +19,8 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: '7.x'
-
+    - name: Restore NuGet packages
+      run: nuget restore observatory.sln
     - name: Restore dependencies
       run: dotnet restore observatory.sln
 
