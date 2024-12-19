@@ -6,19 +6,13 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Install MSBuild
-      run: |
-        choco install visualstudio2019buildtools -y --version=16.11.2
-        choco install visualstudio2022buildtools -y --version=17.5.4
-        refreshenv
-
-    - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v1.1
+    - name: Setup .NET SDK
+      uses: actions/setup-dotnet@v3
       with:
-        vs-version: 'latest'
+        dotnet-version: '6.0.x'
 
     - name: Restore NuGet packages
-      run: nuget restore observatory.sln
+      run: dotnet restore observatory.sln
 
-    - name: Build with MSBuild
-      run: msbuild observatory.sln /p:Configuration=Release
+    - name: Build project
+      run: dotnet build observatory.sln --configuration Release
