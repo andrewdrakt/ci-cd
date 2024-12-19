@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="observatory.code.CurrentUser">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAQQEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>code\CurrentUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="observatory.code.DatabaseHelper">
+    <Position X="4" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEACSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>code\DatabaseHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="observatory.code.PasswordWork">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>code\PasswordWork.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="observatory.viewModel.MainWindowModel">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>viewModel\MainWindowModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="observatory.windows.CheifDepartmentPanel">
+    <Position X="2.25" Y="5.75" Width="1.5" />
+    <NestedTypes>
+      <Class Name="observatory.windows.CheifDepartmentPanel.ReportData" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>windows\CheifDepartmentPanel.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQCAAAAAAAAAAAiAAABAGAAAAAiAAAAAAABAABACABI=</HashCode>
+      <FileName>windows\CheifDepartmentPanel.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="observatory.MainWindow">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>windows\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="observatory.windows.ManagerDB">
+    <Position X="4" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAgAAAAAQgEIAAAAAAAAAAACAIAAABA=</HashCode>
+      <FileName>windows\ManagerDB.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="observatory.windows.ManagerLogsView">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>windows\ManagerLogsView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="observatory.windows.NotesWindow">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>windows\NotesWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="observatory.windows.ReportWindow">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>windows\ReportWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="observatory.windows.SciencePersonnelPanel">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQAAAAAQAAAAAACBAAAACAAAAAyBAAAAAAAIAABAABA=</HashCode>
+      <FileName>windows\SciencePersonnelPanel.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="observatory.windows.SeniorReg">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAACAAAAICBAQAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>windows\SeniorReg.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="observatory.windows.SeniorScientistPanel">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAABAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAABA=</HashCode>
+      <FileName>windows\SeniorScientistPanel.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="observatory.windows.SeniorTaskAdd">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ARAAAAAAAAAAAACAAAAACAAQEAQAEAAAAAAAAABAAAA=</HashCode>
+      <FileName>windows\SeniorTaskAdd.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="observatory.windows.SeniorTaskWatch">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="observatory.windows.SeniorTaskWatch.TaskData" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>windows\SeniorTaskWatch.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAgAAAEAAAAAACFAwAACAAAAAQAAAAgAABAAABACAE=</HashCode>
+      <FileName>windows\SeniorTaskWatch.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="observatory.windows.SeniorViewEmployees">
+    <Position X="9.25" Y="5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="observatory.windows.SeniorViewEmployees.EmployeeData" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>windows\SeniorViewEmployees.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQBAAAABAAAAACAEAAICBAQAAAAAAAEAAAAAAAEEAA=</HashCode>
+      <FileName>windows\SeniorViewEmployees.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="observatory.windows.TaskNotesWindow">
+    <Position X="9.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>windows\TaskNotesWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="observatory.App">
+    <Position X="5.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="observatory.observatoryDataSet">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="observatory.observatoryDataSet.noteRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="observatory.observatoryDataSet.roleRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="observatory.observatoryDataSet.logsDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="observatory.observatoryDataSet.departmentRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="observatory.observatoryDataSet.taskRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="observatory.observatoryDataSet.roleDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="observatory.observatoryDataSet.roleRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="observatory.observatoryDataSet.departmentRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="observatory.observatoryDataSet.roleRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="observatory.observatoryDataSet.logsRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="observatory.observatoryDataSet.employeeRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="observatory.observatoryDataSet.employeeRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="observatory.observatoryDataSet.noteDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="observatory.observatoryDataSet.logsRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="observatory.observatoryDataSet.taskRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="observatory.observatoryDataSet.employeeDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="observatory.observatoryDataSet.taskDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="observatory.observatoryDataSet.reportDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="observatory.observatoryDataSet.taskRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="observatory.observatoryDataSet.departmentRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="observatory.observatoryDataSet.reportRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="observatory.observatoryDataSet.noteRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="observatory.observatoryDataSet.departmentDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="observatory.observatoryDataSet.reportRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="observatory.observatoryDataSet.noteRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="observatory.observatoryDataSet.logsRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="observatory.observatoryDataSet.employeeRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="observatory.observatoryDataSet.reportRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AwBEAAAAMyAEEINADAAISFAQAAkCYBgAIAIAAAFgJBA=</HashCode>
+      <FileName>observatoryDataSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="observatory.observatoryDataSetTableAdapters.noteTableAdapter">
+    <Position X="5.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAgAcAIAAAAAAAACEICAAAAAhAAAAABBA=</HashCode>
+      <FileName>observatoryDataSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

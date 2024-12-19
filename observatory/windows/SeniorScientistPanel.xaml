@@ -1,0 +1,38 @@
+﻿<Window x:Class="observatory.windows.SeniorScientistPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:observatory.windows"
+        mc:Ignorable="d"
+        Title="SeniorScientistPanel" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.2*"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.13*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Menu Grid.ColumnSpan="5" VerticalAlignment="Stretch" HorizontalAlignment="Left">
+            <MenuItem Header="Сотрудники" >
+                <MenuItem x:Name="employeeAddBtn" Header="Добавить сотрудника"  Click="employeeAddBtn_Click"></MenuItem>
+                <MenuItem x:Name="employeeViewingBtn" Header="Просмотреть сотрудников" Click="employeeViewingBtn_Click" ></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Задачи">
+                <MenuItem x:Name="taskAddBtn" Header="Добавить задачу" Click="taskAddBtn_Click" ></MenuItem>
+                <MenuItem  x:Name="tasksBtn" Header="Просмотреть задачи"  Click="tasksBtn_Click"></MenuItem>
+            </MenuItem>
+            <Button Background="#FFD60000" Name="programmExitBtn" Content="Выход" Click="programmExitBtn_Click"/>
+        </Menu>
+        
+        <Frame Name="pageFrame" Grid.Row="1" Grid.ColumnSpan="5" NavigationUIVisibility="Hidden" ></Frame>
+      
+    </Grid>
+</Window>

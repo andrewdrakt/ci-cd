@@ -1,0 +1,30 @@
+﻿<Window x:Class="observatory.windows.TaskNotesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:observatory.windows"
+        mc:Ignorable="d"
+        Title="Просмотр Заметки" Height="400" Width="600">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Детали Заметки" FontSize="16" FontWeight="Bold" Grid.Row="0" Margin="0,0,0,10"/>
+
+        <StackPanel Grid.Row="1">
+            <TextBlock Text="ID Заметки:" FontWeight="Bold"/>
+            <TextBlock x:Name="noteIdText" Margin="0,0,0,10"/>
+            <TextBlock Text="Вложение:" FontWeight="Bold"/>
+            <TextBlock x:Name="attachmentText" Margin="0,0,0,10"/>
+            <TextBlock Text="Загружено:" FontWeight="Bold"/>
+            <TextBlock x:Name="uploadedText" Margin="0,0,0,10"/>
+            <TextBlock Text="Описание:" FontWeight="Bold"/>
+            <TextBlock x:Name="descriptionText" TextWrapping="Wrap" Margin="0,0,0,10"/>
+            <TextBlock Text="ФИО:" FontWeight="Bold"/>
+            <TextBlock x:Name="fioText" Margin="0,0,0,10"/>
+        </StackPanel>
+    </Grid>
+</Window>
