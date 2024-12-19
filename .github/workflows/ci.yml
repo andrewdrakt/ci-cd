@@ -19,8 +19,5 @@ jobs:
       run: nuget restore observatory.sln
 
     - name: Build project using MSBuild
-      run: msbuild observatory.sln /p:Configuration=Release
-
-    - name: Clean build artifacts (optional)
       run: |
-        if (Test-Path "observatory/bin/Release") { echo "Build succeeded, release binaries generated." }
+        "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe" observatory.sln /p:Configuration=Release
