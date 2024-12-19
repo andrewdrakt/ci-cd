@@ -8,16 +8,36 @@ on:
 
 jobs:
   build:
-
     runs-on: windows-latest
 
     steps:
-    - name: Checkout code from repository
+    - name: Checkout code
       uses: actions/checkout@v3
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.1
+      with:
+        vs-version: '2022'
+
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.5
+      with:
+        nuget-version: 'latest'
+
+    - name: Cache NuGet packages
+      uses: actions/cache@v3
+      with:
+        path: ~/.nuget/packages
+        key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
+        restore-keys: |
+          ${{ runner.os }}-nuget-
 
     - name: Restore NuGet packages
       run: nuget restore observatory.sln
 
-    - name: Build project using MSBuild
+    - name: Build with MSBuild
+      run: msbuild observatory.sln /p:Configuration=Release
+
+    - name: Run Tests
       run: |
-        & "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\MSBuild.exe" observatory.sln /p:Configuration=Release
+        nunit3-console.exe ./Tests/bin/Release/net6.0/YourTestProject.dll
