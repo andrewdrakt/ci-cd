@@ -1,3 +1,11 @@
+name: CI
+
+on:
+  push:
+    branches: [ second ]
+  pull_request:
+    branches: [ second ]
+
 jobs:
   build:
     runs-on: windows-latest
@@ -6,13 +14,13 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Setup .NET SDK
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: '6.0.x'
-
     - name: Restore NuGet packages
-      run: dotnet restore observatory.sln
+      run: nuget restore observatory.sln
 
-    - name: Build project
-      run: dotnet build observatory.sln --configuration Release
+    - name: Build project using MSBuild
+      run: |
+        "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\MSBuild.exe" observatory.sln /p:Configuration=Release
+
+    - name: Run Tests
+      run: |
+        dotnet test observatory.sln --configuration Release --no-build --logger:trx
